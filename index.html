@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Free Bus Pass</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>Senior Citizen Bus Pass</h2>
+    </nav>
+
+    <div class="container">
+      <h1>Apply for Free Bus Pass</h1>
+
+      <div class="form">
+        <input type="text" id="name" placeholder="Full Name" />
+        <input type="number" id="age" placeholder="Age" />
+        <input type="text" id="location" placeholder="Location" />
+        <input type="text" id="aadhaar" placeholder="Aadhaar Number" />
+
+        <div class="buttons">
+          <button onclick="generatePass()">Generate Pass</button>
+          <button onclick="clearForm()">Clear</button>
+        </div>
+      </div>
+
+      <!-- Pass Output -->
+      <div id="pass" class="pass-card"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
